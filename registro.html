@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>alienlabs.cl - Login</title>
+  <title>alienlabs.cl - Registro</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="start.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -82,7 +82,15 @@
   </ul>
 
   <div class="login-container">
-    <form id="login-form">
+    <form id="registration-form">
+      <div class="form-group">
+        <input type="text" class="form-control login-input" id="firstname" placeholder="Nombre">
+        <i class="fas fa-user login-icon"></i>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control login-input" id="lastname" placeholder="Apellido">
+        <i class="fas fa-user login-icon"></i>
+      </div>
       <div class="form-group">
         <input type="email" class="form-control login-input" id="email" placeholder="Correo electrónico">
         <i class="fas fa-envelope login-icon"></i>
@@ -91,18 +99,14 @@
         <input type="password" class="form-control login-input" id="password" placeholder="Contraseña">
         <i class="fas fa-lock login-icon"></i>
       </div>
-      <button type="submit" id="login-button" class="btn btn-primary">Iniciar sesión</button>
+      <div class="form-group">
+        <input type="password" class="form-control login-input" id="confirmPassword" placeholder="Repetir contraseña">
+        <i class="fas fa-lock login-icon"></i>
+      </div>
+      <button type="submit" id="register-button" class="btn btn-primary">Registrarse</button>
     </form>
-    <!-- Botón para ir a la página de registro -->
-    <button onclick="window.location.href='registro.html'" class="btn btn-secondary">Registrarse</button>
   </div>
 
-  <link rel="stylesheet" href="graficas.html">
-  <script src="js/bootstrap.min.js"></script>
   <script src="validacion.js"></script>
 </body>
 </html>
-
-
-
-
